@@ -1,10 +1,23 @@
-<h2>{{booksShowCtrl.book.title}}</h2>
+<h2>{{bsc.books.title}}</h2>
 <hr>
 <div class="row">
-	<!-- Here, add the display of the book info,
+	  <img class="img-responive" src="{{bsc.books.image}}" height="20%" width="20%">
+	  <p>
+			{{bsc.books.title}}
+	  </p>
+	  <p>
+	    {{bsc.books.author}}
+	  </p>
+	  <p>
+	  {{bsc.books.releaseDate}}
+	  </p>
+
+		<button class='btn btn-danger' ng-click="bsc.deleteBook(bsc.books)">Delete Book</button>
+
+	Here, add the display of the book info,
        the buttons for editing or deleting,
        the form and buttons that will show if you
        click edit. Don't forget that all of those
        buttons and forms will need some angular
-       functionality! -->
+       functionality!
 </div>

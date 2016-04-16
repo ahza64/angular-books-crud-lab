@@ -2,15 +2,12 @@
 <div ng-repeat="books in booksIndexCtrl.books">
   <img class="img-responive" src="{{books.image}}" height="20%" width="20%">
   <p>
-    <a href="{{books.title}}">{{books.title}}</a>
+    <a ng-href="{{books._id}}">{{books.title}}</a>
   </p>
   <p>
     {{books.author}}
   </p>
   <p>
-  {{books.releaseDate}}
+    {{books.releaseDate}}
   </p>
-  Here, make the HTML for how you want each book to display.
-  Make sure you display an image, the title, and the author.
-  The title should be a link to the specific book view.
 </div>
