@@ -9,32 +9,25 @@
           <li class="list-group-item">
             <h4 class='inline-header'>Book Title:</h4>
             <span ng-hide="editing">{{bsc.books.title}}</span>
-            <input ng-show="editing" ng-model="books.title" type="text" class="form-control input-md">
+            <input ng-show="editing" ng-model="bsc.books.title" type="text" class="form-control input-md">
           </li>
 
           <li class="list-group-item">
             <h4 class='inline-header'>Author Name:</h4>
             <span ng-hide="editing">{{bsc.books.author}}</span>
-            <input ng-show="editing" ng-model="books.author" type="text" class="form-control input-md">
+            <input ng-show="editing" ng-model="bsc.books.author" type="text" class="form-control input-md">
           </li>
 
           <li class="list-group-item">
             <h4 class='inline-header'>Released date:</h4>
             <span ng-hide="editing">{{bsc.books.releaseDate}}</span>
-            <input ng-show="editing" ng-model="books.releaseDate" type="text" class="form-control input-md">
+            <input ng-show="editing" ng-model="bsc.books.releaseDate" type="text" class="form-control input-md">
           </li>
 
         </ul>
 				<button class='btn btn-danger' ng-click="bsc.deleteBook(bsc.books)">Delete Book</button>
 				<button class='btn btn-info' ng-hide="editing" ng-click="editing = true">Edit Book</button>
-				<button class='btn btn-success' ng-show="editing" ng-click="bsc.editBook(album); editing = false">Save Changes</button>
-				<button class='btn btn-success' ng-show="editing" ng-click="editing = false">cancel</button>
+				<button class='btn btn-success' ng-show="editing" ng-click="bsc.editBook(bsc.books); editing = false">Save Changes</button>
+				<button class='btn btn-success' ng-show="editing" ng-click="editing = false">Cancel</button>
 			</div>
     </div>
-
-	Here, add the display of the book info,
-       the buttons for editing or deleting,
-       the form and buttons that will show if you
-       click edit. Don't forget that all of those
-       buttons and forms will need some angular
-       functionality!
