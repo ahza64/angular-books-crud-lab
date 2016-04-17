@@ -20,7 +20,7 @@ function BooksShowController($http, $routeParams, $location) {
     }).then(function successCallback(book) {
       console.log("book delete successful");
 
-
+      $location.path('/');
     }, function errorCallback(response) {
       console.log('There was an error deleting the data', response);
     });
